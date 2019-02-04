@@ -1,0 +1,31 @@
+{
+  "name": "give-promise",
+  "description": "A simple wrapper around `Promise` providing a more human-friendly interface",
+  "version": "1.0.0",
+  "author": "rasenplanscher",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.mjs"
+  ],
+  "scripts": {
+    "build": "browserize",
+    "checkGit": "git diff --quiet",
+    "prepublishOnly": "run-s checkGit build"
+  },
+  "devDependencies": {
+    "browserize": "^1.0.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "homepage": "https://github.com/rasenplanscher/give-promise#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rasenplanscher/give-promise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rasenplanscher/give-promise/issues"
+  },
+  "keywords": [
+    "Promise"
+  ]
+}
